@@ -1,0 +1,14 @@
+# Emprestimo Bancario / valor da casa = vdc / salario = s / qauntos anos vai pagar = a / não pode exceder 30% do salario = n V1
+print('---'*20)
+print('Bem vindo,  A simulação de emprestimo imobiliario')
+print('---'*20)
+vdc = int(input(print('Qual o valor da casa que o senhor/a gostaria de comprar ?')))
+s = float(input(print('Qual o salario familiar ?')))
+a = int(input(print('Quantos anos esta pensando em pagar o emprestimo ?')))
+n = (30 / 100 * s)
+m = (a * 12)
+pg = (vdc / m)
+if pg > n:
+    print('Sua simulação de emprestimo foi negada pois o valor da parcela esta ultrapassando 30% do seu salario')
+else:
+    print('Sua simulação de emprestimo foi aprovada, ficou no valor de R$' + (str(pg) + ' por mes em ' + str(m) + ' meses'))
