@@ -1,0 +1,9 @@
+# definir qual numero e maior 
+n1 = int(input(print('Digite o primeiro numero por favor')))
+n2 = int(input(print('Digite o segundo numero por favor')))
+if n1 > n2:
+    print('O  primeiro numero e ' + str(n1) + ' ele e maior que o segundo numero que e ' + str(n2))
+elif n2 > n1:
+    print('O segundo numero e ' + str(n2) + ' ele e maior que o primeiro numero que e ' + str(n1))
+else:
+    print('Os numeros são iguais o numero e ' + str(n1))
